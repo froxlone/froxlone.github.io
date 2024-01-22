@@ -13,9 +13,6 @@ h1 {
     font-family: 'Passion One', sans-serif;
 }
 p{
-    color: black;
-    font-size: 20px;
-    font-family: 'Arial';
     margin: 30px 0;   
 }
 div{
@@ -24,17 +21,26 @@ div{
     display: block;
     padding: 50px;
     background-color: #151A37;
+    box-shadow: 0 0 50px 1px rgba(0, 0, 0, 0.5);
 }
 a{
     text-decoration: none;
     font-size: 20px;
     font-family: "Arial";
     color: purple;
-    display: block;
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+    transition: 0.2s ease-in;
     margin: 20px 0;
+}
+a:hover{
+    border-bottom-color: white;
 }
 body{
     background-color: #392467;
+    color: purple;
+    font-size: 20px;
+    font-family: 'Passion One', sans-serif;
 }
 img {
     max-width: 100%;
