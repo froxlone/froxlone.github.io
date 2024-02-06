@@ -1,0 +1,38 @@
+*{
+	padding: 0;   /*внутренний отступ контейнера*/
+	margin: 0;    /*внешний отступ от контейнера*/
+	box-sizing: border-box;    /*масштабирование контейнера*/
+}
+body{
+	background-color: #392467;   /*цвет фона*/
+}
+.main{       /*классы*/
+	background-color: #4d0085;
+	display: flex;  /*подстраиваемый контейнер*/
+	width: 95%;   /*ширина от общего экрана*/
+	max-width: 1000px;   /*максимальная ширина */
+	margin: auto;
+	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5); /*тень рамки контейнера*/
+	flex-wrap: wrap ;
+}
+/*Разметка временная*/
+.item{
+	max-height: 265px;
+	max-width: 490px;
+	height: calc(95vw / 2 / 16*9);  /*vw-viewport width-процентная ширина от максимума*/
+	width: calc(50% - 10px);
+	background-color: purple;
+	margin: 5px;
+	background-position: center;
+	background-size: cover;
+}
+.heading{
+	font-size: 40px;
+	text-align: center;  /*установка положения текста*/
+	width: 100%;
+	padding: 15px 0;
+	font-family: 'Passion One', sans-serif;
+	color: white;
+}
+
+
