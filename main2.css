@@ -7,9 +7,9 @@ body{
 	background-color: #392467;   /*цвет фона*/
 }
 .main{       /*классы*/
-	background-color: #4d0085;
+	background-color: #4e0085;
 	display: flex;  /*подстраиваемый контейнер*/
-	width: 95%;   /*ширина от общего экрана*/
+	width: 80%;   /*ширина от общего экрана*/
 	max-width: 1000px;   /*максимальная ширина */
 	margin: auto;
 	box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.5); /*тень рамки контейнера*/
@@ -21,10 +21,18 @@ body{
 	max-width: 490px;
 	height: calc(95vw / 2 / 16*9);  /*vw-viewport width-процентная ширина от максимума*/
 	width: calc(50% - 10px);
-	background-color: purple;
+	background-color: rgb(107, 1, 107);
 	margin: 5px;
 	background-position: center;
 	background-size: cover;
+	opacity: 0.6;
+	filter: blur(3px);
+	/*свойство для добавления фильтров*/
+	/*filter: blur(3px)-размытие */
+	transition: opacity 0.4s linear, transform 0.6s ease;
+	/*плавность анимации*/
+	/*выбор свойства которое нужно сделать плавным*/
+
 }
 .heading{
 	font-size: 40px;
@@ -35,4 +43,25 @@ body{
 	color: white;
 }
 
+.item:hover{   /*hover наведение мышкой*/
+	box-shadow: 0 0 200px 30px rgba(255,255,255,0.7);
+	z-index: 10;
+	/* z-index-уровень 10выше всех 0 на одном уровне */
+	opacity: 1; 
+	/*0 невидимый 1 видимый opacity-непрозрачн*/
+	filter: blur(0)contrast(1.7);
+	/*filter sepia(1.3);-коричневый*/
+	/*filter brightness(1.7);-яркость*/
+	/*filter grayscale(10);-серый фильтр*/
+	/*filter hue-rotate(45deg)-фиеолетовый фильтр в градусах;*/
+	transform: scale(1.2);
+	/*svoystvo transformirovaniya
+	transform: scale(1.2)-1.2 maschtabirovanie- 1 original
+	transform: rotate(45deg)-поворот в градусах
+	transform: translateX(3)-переиещение по горизонтали
+		transform: translateY(3)-переиещение по горизонтали
+	*/
 
+	
+
+}     

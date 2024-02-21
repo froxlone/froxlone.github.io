@@ -1,13 +1,30 @@
+body {
+	background-color: #392467;
+}
+.main {
+	background-color: #392467;
+}
+
 .img-box{
-	column-count: 4;
-    column-gap: 0;
+	column-count: 3;
+    column-gap: 3px;
+	max-width: px;
+	margin: auto;
+	width: 80%;
+	background-color: rgb(95, 54, 134);
+	padding: 10px;
+	box-shadow: 0 0 10px 5px rgb(43, 1, 98) ;
+
 }
 
 .image{
 	max-width: 100%;
 	display: block;
 }
+.image-wrapper{
+	display: block;
+}
 
-.image + .image{
-	margin: 3px;
+.image-wrapper + .image-wrapper{
+	margin: 3px 0;
 }
